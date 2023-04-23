@@ -1,0 +1,236 @@
+body {
+   
+      
+      background-image: url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpciUyMGFuZCUyMGJlYXV0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center cover;
+      margin: 0;
+      padding: 10px;
+      font-family: helvetica, sans-serif;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+      
+  }
+  main{
+      color: whitesmoke;
+      width: 100%;
+  }
+  .header{
+      display: flex;
+      width: 100%;
+      padding: 5px;
+      margin: 30px;
+      font-family: Alex Brush, sans-serif;
+      font-size: 1.5rem;
+      
+  }
+  
+  
+  .logo{
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 3px;
+  }
+  
+  .nav{
+      width: 100%;
+      display: flex;
+      padding: 15px;
+      gap: 15px;
+      justify-content: space-evenly;
+      background-color: black;
+      font-size: 0.8em;
+      border-radius: 10px;
+  }
+  
+  .reviews{
+      padding: 5px;
+      margin-top: 10px;
+      justify-content: center;
+      padding-top: 15px;
+      text-align: center;
+      font-size: 0.9rem;
+      font-style: italic;
+      background: green;
+      height: 10vh;
+      border-radius: 15px;
+  }
+  footer{
+      display: none;
+      background-color: black;
+      text-align: center;
+      color: white;
+      font-size: 0.8rem;
+  }
+  /*.social > img{
+      border-radius: 75%;
+      width: 25px;
+      height: 25px;
+  }*/
+  section{
+      padding: 10px;
+      
+      }
+      .centered-text{
+          text-align: center;
+      }
+      p > a{
+          text-decoration: underline;
+      }
+      a:hover{
+          color: yellow;
+      }
+      .main-content {
+    display: grid;
+    grid-template-columns: 180px 3fr 180px;
+    grid-gap: 5px;
+    padding: 10px;
+  }
+  
+  .main-content > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+      border-radius: 10px;
+  }
+  .images{
+      width: 150px;
+      height: 150px;
+  }
+  .booking-policy{
+      font-size: 0.7rem;
+      color: blue;
+      border-radius: 5%;
+      
+      margin: auto;
+      
+  }
+  span{
+      position: absolute;
+      margin-left: -80px;
+      color: blue;
+      font-style: italic;
+      font-size: 0.7rem;
+      }
+  form {
+      width: 400px;
+      color: black;
+      font-family: helvetica, sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: 10px 80% 20% 20% 20% 20%;
+      gap: 15px;
+      margin: 20px;
+      text-align: left;
+      }
+  input, button{
+      
+      border: none;
+      color: darkgray;
+      border-radius: 10px;
+      box-shadow: 2px 2px black;;
+  }
+  button:hover{
+      background-color: black;
+      color: white;
+  }
+  .socials{
+      display: absolute;
+      text-align: right;
+      margin-right: 20px;
+  }
+  
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 460px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .selection{
+      transform: scale(1.5);
+      width: 400px;
+      margin-left: 200px;
+  }
+      
+  @media only screen and (max-width: 400px){
+      .nav{
+          display: block;
+          width: 100px;
+          position: absolute;
+          height: 20vh;
+          line-height: 2;
+          margin-top: 12px;
+      }
+      .right-pane{
+          display: none;
+      }
+      .left-pane{
+          display: none;
+      }
+      .main-content{
+          display: block;
+          width: 300px;
+          margin-left: 10%;
+          
+      }
+      body{
+          width: 300px;
+      }
+  }
+      
+  
+  
